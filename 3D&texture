@@ -1,0 +1,18 @@
+let img;
+function preload() {
+  img = loadImage("https://raw.githubusercontent.com/choheonrae/IMG/main/%EA%B3%A0%EC%96%91%EC%9D%B4.jpg")
+}
+
+function setup() {
+  createCanvas(400,400,WEBGL);
+  //noStroke();
+}
+function draw() {
+  image(img, 0, 0, img.width/4, img.height/4)
+}
+function draw() {
+  rotateX(mouseY/10);
+  rotateY(mouseX/10);
+  texture(img);
+  box(100);
+}
